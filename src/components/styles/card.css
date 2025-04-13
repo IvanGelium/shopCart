@@ -1,0 +1,154 @@
+.card {
+    width: 100%;
+    height: 500px;
+    background: rgb(0, 168, 255);
+    background: linear-gradient(
+        180deg,
+        var(--secondary-color),
+        var(--primary-color)
+    );
+    border-radius: 1rem;
+    padding: 0.25rem;
+    transition: all linear 0.1s;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 0.25rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: all linear 0.1s;
+}
+
+.imgContainer {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.img {
+}
+
+.addBtn {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+.card:hover .addBtn {
+    opacity: var(--unimp-opacity);
+    visibility: visible;
+    transition: all linear 0.1s 0.3s;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+    animation: turn ease-in-out infinite 2s;
+    outline: 1px solid gold;
+    outline-offset: 25px;
+}
+
+.turner {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    transform: translate(-20px, -20px);
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(2turn);
+    }
+}
+
+.infoContainer {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 1rem 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.priceContainer {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+}
+
+.price {
+    color: red;
+}
+
+.fake {
+    opacity: var(--unimp-opacity);
+    color: red;
+    font-size: 0.75rem;
+}
+
+.salePrice {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.fakePrice {
+    text-decoration: line-through;
+    opacity: var(--unimp-opacity);
+}
+
+.icon {
+    width: 1rem;
+}
+
+.verif {
+    margin-top: 0.1rem;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.unimp {
+    opacity: var(--unimp-opacity);
+}
+
+.category {
+    font-size: 0.75rem;
+}
+
+.ratingContainer {
+    display: flex;
+    gap: 0.25rem;
+}

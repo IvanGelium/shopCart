@@ -1,0 +1,18 @@
+.cartPage {
+    display: flex;
+    gap: 1rem;
+}
+
+.stripeCart {
+    width: 70vh;
+}
+
+.Cart {
+    width: 70%;
+}
+
+.infoCart {
+}
+
+.goodsCart {
+}

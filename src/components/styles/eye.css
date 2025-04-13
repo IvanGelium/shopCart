@@ -1,0 +1,131 @@
+.wholeEye {
+    position: absolute;
+    /* transform: rotateZ(45deg); */
+}
+
+.eye {
+    width: 105px;
+    height: 105px;
+    border-radius: 70% 0% 70% 0%;
+    background-color: black;
+    overflow: hidden;
+    animation: blink 1.5s ease-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    width: 95px;
+    height: 95px;
+    border-radius: 70% 0% 70% 0%;
+    background-color: white;
+}
+
+.eyeLashes {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+}
+
+#one {
+    position: relative;
+    top: -125px;
+    left: 50px;
+    transform: rotateZ(90deg);
+    animation: lash1 1.5s ease-out infinite;
+}
+
+#two {
+    position: relative;
+    top: -30px;
+    left: -40px;
+    transform: rotateZ(180deg);
+    animation: lash2 1.5s ease-out infinite;
+}
+
+#three {
+    position: relative;
+    top: -105px;
+    left: -15px;
+    transform: rotateZ(45deg);
+    animation: lash3 1.5s ease-out infinite;
+}
+
+.apple {
+    width: 80px;
+    height: 80px;
+    outline: 5px solid black;
+    border-radius: 100%;
+    position: relative;
+    top: -0px;
+    left: -0px;
+}
+
+.eyesphere {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.blick {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+@keyframes blink {
+    0% {
+        outline: 0px solid black;
+    }
+    20% {
+        outline: 50px solid black;
+        outline-offset: -52px;
+    }
+    100% {
+        outline: 0px solid black;
+    }
+}
+
+@keyframes lash1 {
+    0% {
+        transform: rotateZ(90deg);
+    }
+    20% {
+        transform: translateY(30px) translateX(10px) rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes lash2 {
+    0% {
+        transform: rotateZ(180deg);
+    }
+    20% {
+        transform: translateX(30px) translateY(0px) rotateZ(100deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes lash3 {
+    0% {
+        transform: rotateZ(45deg);
+    }
+    20% {
+        transform: translateX(35px) translateY(35px) rotateZ(45deg);
+    }
+    100% {
+        transform: rotateZ(45deg);
+    }
+}
