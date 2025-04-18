@@ -1,18 +1,37 @@
+.sowwy {
+  position: relative;
+  top: 110px;
+}
+
 .cartPage {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+  position: relative;
+  top: 110px;
+  background-color: aliceblue;
 }
 
 .stripeCart {
-    width: 70vh;
+  width: 70vw;
+  outline: 1px solid red;
 }
 
 .Cart {
-    width: 70%;
+  width: 100%;
+  height: 600px;
+  display: flex;
 }
 
 .infoCart {
+  outline: 1px solid green;
+  width: 50vw;
 }
 
 .goodsCart {
+  background-color: white;
+  border-radius: 2rem;
+  width: 100%;
+  height: fit-content;
 }

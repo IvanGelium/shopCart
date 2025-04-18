@@ -1,13 +1,9 @@
-import '../styles/card.css'
+import '../styles/cartCard.css'
 import '../../globals.css'
-import verif from '../../assets/verPin.svg'
-import sale from '../../assets/sale.svg'
-import star from '../../assets/star.svg'
-import add from '../../assets/cartPlus.svg'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-export default function Card({ id, stateOfCart }) {
+export default function CartCard({ id, stateOfCart }) {
   const [error, setError] = useState(null)
   const [load, setLoad] = useState(true)
   const [data, setData] = useState(null)
